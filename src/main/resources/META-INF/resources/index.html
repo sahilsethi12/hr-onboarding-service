@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HR Employee Management</title>
+
+    <!-- Dashboard styling -->
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <h2>HR Portal</h2>
+            <p>Employee Management</p>
+        </div>
+
+        <nav>
+            <a href="#dashboard" class="nav-link active">
+                Dashboard
+            </a>
+
+            <a href="#upload-section" class="nav-link">
+                Bulk Upload
+            </a>
+
+            <a href="#employees-section" class="nav-link">
+                Employees
+            </a>
+            <a href="#history-section" class="nav-link">
+                Upload History
+            </a>
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Header -->
+        <header class="top-header">
+            <div>
+                <h1>HR Administration</h1>
+                <p>Manage employee onboarding and records</p>
+            </div>
+
+            <div class="admin-profile">
+                <span>HR</span>
+                <strong>Administrator</strong>
+            </div>
+        </header>
+
+
+        <!-- Dashboard Overview -->
+        <section id="dashboard" class="dashboard-page">
+            <div class="welcome-section">
+                <h2>Welcome to Employee Management</h2>
+                <p>
+                    Upload employee records, monitor processing
+                    and browse employee information.
+                </p>
+            </div>
+
+        </section>
+
+
+        <!-- CSV Upload Section -->
+        <section id="upload-section" class="dashboard-page">
+            <div class="section-heading">
+                <h2>Bulk Employee Upload</h2>
+                <p>Upload employee records using a CSV file.</p>
+            </div>
+
+            <div class="upload-card">
+
+                <form id="uploadForm">
+
+                    <div class="file-upload-area">
+
+                        <div class="upload-icon">↑</div>
+
+                        <h3>Select Employee CSV File</h3>
+
+                        <p>
+                            Choose a CSV file containing employee details.
+                        </p>
+
+                        <input
+                                type="file"
+                                id="csvFile"
+                                accept=".csv,text/csv"
+                                required
+                        >
+
+                        <label for="csvFile" class="file-label">
+                            Choose CSV File
+                        </label>
+
+                        <p id="selectedFileName">
+                            No file selected
+                        </p>
+
+                    </div>
+
+                    <button type="submit" id="uploadButton">
+                        Upload Employees
+                    </button>
+
+                </form>
+
+            </div>
+
+
+            <!-- Upload Processing Status -->
+            <div id="uploadStatusSection" class="status-card hidden">
+
+                <h3>Upload Processing Status</h3>
+
+                <p id="jobFileName">File: -</p>
+
+                <p id="jobStatus">Status: Waiting</p>
+
+                <div class="progress-container">
+                    <div id="progressBar" class="progress-bar"></div>
+                </div>
+
+                <p id="progressText">0% processed</p>
+
+                <div class="upload-statistics">
+
+                    <div class="stat-item">
+                        <h3 id="totalRows">0</h3>
+                        <p>Total Rows</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h3 id="processedRows">0</h3>
+                        <p>Processed</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h3 id="insertedRows">0</h3>
+                        <p>Inserted</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h3 id="rejectedRows">0</h3>
+                        <p>Rejected</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h3 id="duplicateRows">0</h3>
+                        <p>Duplicates</p>
+                    </div>
+
+                </div>
+
+                <button id="downloadErrorsButton" class="secondary-button hidden">
+                    Download Error Report
+                </button>
+
+                <p id="uploadMessage"></p>
+
+            </div>
+
+        </section>
+
+        <!-- Upload History Section -->
+        <section id="history-section" class="dashboard-page">
+            <div class="section-heading">
+                <h2>Upload History</h2>
+                <p>Track previous employee uploads and download error reports.</p>
+            </div>
+
+            <div class="employee-card">
+
+                <div class="table-responsive">
+
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>File Name</th>
+                            <th>Upload Date</th>
+                            <th>Status</th>
+                            <th>Total Rows</th>
+                            <th>Inserted</th>
+                            <th>Rejected</th>
+                            <th>Duplicates</th>
+                            <th>Action</th>
+                        </tr>
+                        </thead>
+
+                        <tbody id="uploadHistoryTableBody">
+                        <tr>
+                            <td colspan="8">Loading upload history...</td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="pagination">
+
+                    <button id="historyPreviousPage" disabled>
+                        Previous
+                    </button>
+
+                    <span id="historyPageInfo">Page 1 of 1</span>
+
+                    <button id="historyNextPage" disabled>
+                        Next
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Employee Directory -->
+        <section id="employees-section" class="dashboard-page">
+            <div class="section-heading">
+                <h2>Employee Directory</h2>
+                <p>Browse employees already loaded into the system.</p>
+            </div>
+
+            <div class="employee-card">
+
+                <div class="table-header">
+                    <h3>Employees</h3>
+
+                    <div>
+                        <label for="pageSize">Rows per page:</label>
+
+                        <select id="pageSize">
+                            <option value="10">10</option>
+                            <option value="20" selected>20</option>
+                            <option value="50">50</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="table-responsive">
+
+                    <table>
+
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Date of Birth</th>
+                            <th>Gender</th>
+                            <th>Mobile</th>
+                            <th>Email</th>
+                            <th>Department</th>
+                            <th>Designation</th>
+                            <th>Date of Joining</th>
+                        </tr>
+                        </thead>
+
+                        <tbody id="employeeTableBody">
+
+                        <tr>
+                            <td colspan="8">
+                                Loading employees...
+                            </td>
+                        </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <div class="pagination">
+
+                    <button id="previousPage" disabled>
+                        Previous
+                    </button>
+
+                    <span id="pageInfo">Page 1 of 1</span>
+
+                    <button id="nextPage" disabled>
+                        Next
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<!-- JavaScript files -->
+<script src="/js/api.js" defer></script>
+<script src="/js/upload.js" defer></script>
+<script src="/js/employees.js" defer></script>
+<script src="/js/history.js" defer></script>
+<script src="/js/app.js" defer></script>
+
+</body>
+</html>

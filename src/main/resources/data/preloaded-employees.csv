@@ -1,0 +1,51 @@
+first_name,last_name,dob,gender,mobile,email,department,designation,date_of_joining
+Farida,Otieno,02-03-1983,F,7330820334,farida.otieno655@example.org,Water Supply,Field Officer,07-02-2023
+Rufaro,Mutasa,04-10-1965,F,8295700227,rufaro.mutasa67@example.org,Accounts,Senior Clerk,20-07-2017
+Emeka,Singh,23-08-1992,F,6268301514,emeka.singh517@example.org,Public Health,Supervisor,16-10-2018
+Ibrahim,Khan,12-01-1999,M,6960703024,ibrahim.khan879@example.org,Revenue,Accountant,28-01-2022
+Kavita,Patel,19-10-1983,F,6080684607,kavita.patel747@example.org,Accounts,Data Entry Operator,22-12-2019
+Amit,Balogun,27-07-1997,F,8522827847,amit.balogun156@example.org,Revenue,Data Entry Operator,09-10-2026
+Paulo,Fernandes,04-12-1979,M,9682273909,paulo.fernandes442@example.org,Public Health,Field Officer,26-06-2021
+Sneha,Balogun,22-10-1971,F,7045698719,,Administration,Inspector,04-02-2021
+Pooja,Mensah,13-03-1980,F,9526594001,pooja.mensah670@example.org,Administration,Field Officer,26-05-2015
+Anita,Mensah,12-07-1995,F,9509382836,anita.mensah524@example.org,Engineering,Senior Clerk,03-02-2017
+Tendai,Chirwa,25-12-1967,M,7884295428,tendai.chirwa281@example.org,Revenue,Junior Assistant,09-09-2023
+Ritu,Adeyemi,12-05-1973,M,8129269247,ritu.adeyemi821@example.org,Engineering,Inspector,02-04-2023
+Manoj,Nair,12-07-1987,M,9525934719,manoj.nair613@example.org,Public Health,Data Entry Operator,10-01-2022
+Kiran,Nair,09-09-1986,F,6664041288,kiran.nair688@example.org,Sanitation,Senior Clerk,26-06-2015
+Neha,Verma,24-05-1981,F,7836051508,neha.verma729@example.org,Accounts,Section Officer,02-09-2020
+Ganesh,Abubakar,04-01-1995,F,8245535103,ganesh.abubakar622@example.org,Public Health,Accountant,08-01-2023
+Grace,Singh,28-06-1968,M,7103760800,grace.singh324@example.org,Accounts,Field Officer,08-10-2019
+Kiran,Mutasa,14-11-1997,F,8264701021,kiran.mutasa938@example.org,Public Health,Junior Assistant,01-08-2015
+Sunil,Okafor,23-10-1966,F,7541297272,sunil.okafor386@example.org,Public Health,Field Officer,05-02-2024
+Pooja,Iyer,10-01-1990,M,7220135710,pooja.iyer161@example.org,Engineering,Inspector,07-09-2018
+Tendai,Dlamini,10-03-1973,F,6064273545,tendai.dlamini161@example.org,Engineering,Accountant,19-09-2018
+Fatima,Chirwa,21-11-1973,F,9242715756,fatima.chirwa326@example.org,Accounts,Senior Clerk,18-10-2018
+Sanjay,Kamau,13-07-1977,F,6011658983,sanjay.kamau275@example.org,Public Health,Field Officer,02-10-2019
+Tendai,Otieno,27-05-1983,M,7364687209,tendai.otieno173@example.org,Water Supply,Accountant,13-06-2024
+Ritu,Iyer,16-07-1980,F,7028994669,ritu.iyer108@example.org,Engineering,Supervisor,14-08-2023
+Sanjay,Nair,07-01-1993,M,6517384708,sanjay.nair275@example.org,Water Supply,Accountant,28-10-2022
+Fatima,Gupta,25-07-1973,M,7432929421,fatima.gupta952@example.org,Administration,Section Officer,20-02-2016
+Pooja,Kulkarni,04-02-1989,M,9928481091,pooja.kulkarni368@example.org,Water Supply,Inspector,06-04-2015
+Ganesh,Pillai,24-12-1970,F,6144193191,ganesh.pillai927@example.org,Town Planning,Senior Clerk,02-10-2019
+Manoj,Reddy,15-12-1981,F,6072449713,manoj.reddy713@example.org,Administration,Data Entry Operator,13-08-2026
+Kavita,Desai,01-07-1981,F,7347413353,kavita.desai181@example.org,Accounts,Accountant,27-07-2021
+Sanjay,Pillai,01-12-2000,F,6773394933,sanjay.pillai186@example.org,Sanitation,Field Officer,16-12-2017
+Fatima,Kulkarni,14-10-1967,M,7186053374,fatima.kulkarni58@example.org,Sanitation,Junior Assistant,16-09-2016
+Rahul,Okafor,07-02-1967,M,6942690999,rahul.okafor90@example.org,Sanitation,Junior Assistant,27-08-2015
+Vikram,Mutasa,15-03-1991,F,8065229943,vikram.mutasa464@example.org,Town Planning,Data Entry Operator,27-10-2017
+Priya,Das,01-04-1988,M,7191023623,,Administration,Section Officer,25-04-2016
+Neha,Das,20-10-1973,F,9740212901,neha.das266@example.org,Sanitation,Senior Clerk,21-12-2019
+Fatima,Khan,21-04-1992,F,6963923487,fatima.khan150@example.org,Sanitation,Field Officer,24-07-2025
+Priya,Chirwa,03-12-1989,M,6864375220,priya.chirwa105@example.org,Engineering,Data Entry Operator,27-06-2016
+Maria,Eze,17-07-1971,F,7086219970,maria.eze698@example.org,Revenue,Accountant,13-10-2026
+Neha,Otieno,22-03-1992,M,9656119259,neha.otieno969@example.org,Administration,Senior Clerk,12-07-2018
+Amit,Tembe,19-07-1980,F,7719397719,amit.tembe763@example.org,Engineering,Data Entry Operator,18-09-2024
+Joseph,Mutasa,01-06-1980,M,7810737537,joseph.mutasa392@example.org,Sanitation,Accountant,18-11-2015
+Rufaro,Dlamini,03-11-1999,M,7940198555,rufaro.dlamini675@example.org,Engineering,Inspector,17-04-2021
+Grace,Phiri,14-12-1997,M,6211262873,grace.phiri703@example.org,Water Supply,Accountant,24-04-2024
+Priya,Mwangi,22-03-1985,F,7627536382,priya.mwangi487@example.org,Public Health,Data Entry Operator,24-04-2026
+Ganesh,Phiri,02-09-1994,F,7146040901,ganesh.phiri901@example.org,Sanitation,Junior Assistant,05-12-2025
+Tendai,Patel,16-07-1974,F,9058898127,tendai.patel244@example.org,Revenue,Field Officer,05-11-2015
+Manoj,Eze,08-11-1980,M,6706732207,manoj.eze803@example.org,Town Planning,Inspector,06-05-2018
+Pooja,Mensah,28-06-1999,F,9208043501,pooja.mensah340@example.org,Sanitation,Junior Assistant,07-06-2018

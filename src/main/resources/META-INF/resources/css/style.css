@@ -1,0 +1,421 @@
+/* Global styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6fa;
+    color: #263238;
+}
+
+/* Main dashboard layout */
+.dashboard {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background: #172554;
+    color: white;
+    padding: 30px 20px;
+    flex-shrink: 0;
+}
+
+.brand h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.brand p {
+    color: #cbd5e1;
+    font-size: 13px;
+    margin-bottom: 40px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-link {
+    color: #cbd5e1;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 7px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background: #334b83;
+    color: white;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    min-width: 0;
+    padding: 30px;
+}
+
+/* Header */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.top-header h1 {
+    font-size: 27px;
+    margin-bottom: 7px;
+}
+
+.top-header p,
+.section-heading p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.admin-profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.admin-profile span {
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 12px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+/* Welcome section */
+.welcome-section {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    border: 1px solid #e2e8f0;
+}
+
+.welcome-section h2 {
+    margin-bottom: 10px;
+}
+
+/* Content sections */
+.content-section {
+    margin-bottom: 35px;
+}
+
+.section-heading {
+    margin-bottom: 18px;
+}
+
+.section-heading h2 {
+    font-size: 21px;
+    margin-bottom: 7px;
+}
+
+/* Cards */
+.upload-card,
+.status-card,
+.employee-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 25px;
+}
+
+/* File upload */
+.file-upload-area {
+    border: 2px dashed #cbd5e1;
+    border-radius: 10px;
+    padding: 35px;
+    text-align: center;
+    background: #f8fafc;
+}
+
+.upload-icon {
+    font-size: 40px;
+    color: #2563eb;
+    margin-bottom: 12px;
+}
+
+.file-upload-area h3 {
+    margin-bottom: 10px;
+}
+
+.file-upload-area p {
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+#csvFile {
+    display: none;
+}
+
+.file-label {
+    display: inline-block;
+    background: #e0e7ff;
+    color: #1d4ed8;
+    padding: 11px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.file-label:hover {
+    background: #c7d2fe;
+}
+
+#selectedFileName {
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+/* Buttons */
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 18px;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+button:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+.secondary-button {
+    background: #15803d;
+}
+
+/* Progress bar */
+.progress-container {
+    width: 100%;
+    height: 12px;
+    background: #e2e8f0;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: #16a34a;
+    transition: width 0.3s ease;
+}
+
+/* Upload statistics */
+.upload-statistics {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.stat-item {
+    background: #f8fafc;
+    padding: 18px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.stat-item h3 {
+    font-size: 25px;
+    color: #2563eb;
+    margin-bottom: 7px;
+}
+
+.stat-item p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* Employee table */
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.table-header select {
+    padding: 8px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 750px;
+}
+
+th {
+    background: #f1f5f9;
+    color: #334155;
+    text-align: left;
+    padding: 14px;
+    font-size: 13px;
+}
+
+td {
+    padding: 14px;
+    border-bottom: 1px solid #e2e8f0;
+    font-size: 13px;
+}
+
+tr:hover td {
+    background: #f8fafc;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.pagination button {
+    margin-top: 0;
+}
+
+#pageInfo {
+    font-size: 13px;
+    color: #64748b;
+}
+
+/* Utility */
+.hidden {
+    display: none !important;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+    .sidebar {
+        width: 190px;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+
+    .upload-statistics {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .dashboard {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .brand p {
+        margin-bottom: 15px;
+    }
+
+    .sidebar nav {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .top-header {
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .admin-profile strong {
+        display: none;
+    }
+
+    .upload-statistics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Upload history status badges */
+
+.status-badge {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.status-completed {
+    background: #dcfce7;
+    color: #166534;
+}
+
+.status-warning {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+.status-processing {
+    background: #dbeafe;
+    color: #1e40af;
+}
+
+.status-pending {
+    background: #e2e8f0;
+    color: #475569;
+}
+
+.status-failed {
+    background: #fee2e2;
+    color: #991b1b;
+}
+
+.history-download-button {
+    background: #15803d;
+    padding: 8px 12px;
+    font-size: 12px;
+    white-space: nowrap;
+    margin: 0;
+}
+/* Dashboard page navigation */
+
+.dashboard-page {
+    display: none;
+}
+
+.dashboard-page.active-page {
+    display: block;
+}

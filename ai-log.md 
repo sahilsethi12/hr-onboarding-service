@@ -1,0 +1,26 @@
+## Where AI Was Used
+
+AI assistance was used for:
+
+- **Requirements and architecture:** Understanding requirements and defining the application design.
+- **Database design:** Entity modelling, duplicate detection, and idempotency.
+- **Frontend development:** HTML, CSS, JavaScript, and API integration.
+- **Testing and debugging:** Identifying issues and suggesting test scenarios.
+- **Deployment:** Dockerfile, UBI runtime, Docker Compose, and build optimization.
+- **Documentation:** Preparing specification, implementation plan, README, and test instructions.
+
+All suggestions were reviewed, adapted, and verified by the developer before integration.
+
+
+
+Ai was wrong :
+
+AI initially suggested a generic Java runtime image. I clarified that the project should use Red Hat UBI with OpenJDK 21, and the Dockerfile was adjusted accordingly.
+The initial Dockerfile copied the complete source before resolving Maven dependencies.
+I introduced a separate dependency-resolution layer so subsequent builds could reuse the cached dependencies.
+AI discussed Kafka as part of asynchronous processing. I decided to use Camel SEDA for the initial implementation
+because the assignment did not require distributed processing or durable messaging. Kafka was retained as a future enhancement.
+AI suggested Redis for improving upload status and progress retrieval.
+I clarified that PostgreSQL should remain the source of truth and Redis should only be considered an optional caching layer.
+Some initial suggestions placed database and business operations directly inside Camel routes.
+I refined the architecture so Camel handles HTTP and orchestration, CDI services handle business logic, and Panache handles persistence.

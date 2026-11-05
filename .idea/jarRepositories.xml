@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="redhat-ga-repository" />
+      <option name="name" value="redhat-ga-repository" />
+      <option name="url" value="https://maven.repository.redhat.com/ga" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="redhat.ga" />
+      <option name="name" value="Red Hat General Availability Repository" />
+      <option name="url" value="https://maven.repository.redhat.com/ga" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="red-hat-enterprise-maven-repository" />
+      <option name="name" value="red-hat-enterprise-maven-repository" />
+      <option name="url" value="https://maven.repository.redhat.com/ga/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="atlassian" />
+      <option name="name" value="atlassian external repo" />
+      <option name="url" value="https://packages.atlassian.com/maven-external/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="eap.brew" />
+      <option name="name" value="EAP Brew Repository" />
+      <option name="url" value="http://download.eng.bos.redhat.com/brewroot/repos/jb-eap-7.1-rhel-7-maven-build/latest/maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="redhat-ea" />
+      <option name="name" value="redhat-ea" />
+      <option name="url" value="https://maven.repository.redhat.com/earlyaccess/all/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.brew" />
+      <option name="name" value="JBoss Brew Repository" />
+      <option name="url" value="http://download-node-02.eng.bos.redhat.com/brewroot/repos/jb-common-build/latest/maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="redhat.ea" />
+      <option name="name" value="Red Hat Early Access Repository" />
+      <option name="url" value="https://maven.repository.redhat.com/earlyaccess/all" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven.central" />
+      <option name="name" value="Maven Central" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="redhat-ga" />
+      <option name="name" value="redhat-ga" />
+      <option name="url" value="https://maven.repository.redhat.com/ga/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="fis.brew" />
+      <option name="name" value="FIS Brew Repository" />
+      <option name="url" value="http://download-node-02.eng.bos.redhat.com/brewroot/repos/jb-fis-2.0-maven-build/latest/maven/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.ea" />
+      <option name="name" value="JBoss Early Access Repository" />
+      <option name="url" value="http://repository.jboss.org/nexus/content/groups/ea" />
+    </remote-repository>
+  </component>
+</project>
