@@ -43,7 +43,7 @@ For local development:
 Clone the repository and navigate to the project root.
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/sahilsethi12/hr-onboarding-service.git
 cd hr-onboarding-service
 ```
 
@@ -87,7 +87,7 @@ The Dockerfile uses a multi-stage build and separates Maven dependency resolutio
 This allows Docker/Podman to reuse cached Maven dependencies when application source code changes.
 
 ### First build
-s
+
 ```bash
 docker compose up --build -d
 ```
