@@ -65,9 +65,6 @@ Open the application:
 
 **Frontend:** http://localhost:8080
 
-**Swagger UI:** http://localhost:8080/q/swagger-ui
-
-**OpenAPI specification:** http://localhost:8080/q/openapi
 
 Stop the application:
 
