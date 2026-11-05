@@ -268,3 +268,17 @@ hr-onboarding-service/
                 ├── css/
                 └── js/
 ```
+## Test Results
+
+The project includes unit tests and REST API integration tests.
+
+| Test Class | Tests | Failures | Errors |
+| EmployeeValidatorTest | 10 | 0 | 0 |
+| MainRouteTest | 7 | 0 | 0 |
+| Total | 17 | 0 | 0 |
+
+Run tests using:
+
+```bash
+mvn test
+```
