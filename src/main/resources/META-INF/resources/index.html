@@ -61,16 +61,115 @@
 
 
         <!-- Dashboard Overview -->
+
         <section id="dashboard" class="dashboard-page">
-            <div class="welcome-section">
-                <h2>Welcome to Employee Management</h2>
-                <p>
-                    Upload employee records, monitor processing
-                    and browse employee information.
-                </p>
+            <div class="dashboard-welcome">
+                <div>
+                    <h2>Welcome back, Administrator 👋</h2>
+                    <p>Here's what's happening with employee onboarding.</p>
+                </div>
+                <button onclick="showUploadPage()" class="primary-button">
+                    + Upload Employees
+                </button>
             </div>
 
+            <!-- KPI Cards -->
+            <div class="dashboard-stats">
+                <div class="dashboard-stat-card">
+                    <div class="stat-icon blue">👥</div>
+                    <div>
+                        <p>Total Employees</p>
+                        <h2 id="dashboardEmployees">--</h2>
+                        <span>Registered employees</span>
+                    </div>
+                </div>
+
+                <div class="dashboard-stat-card">
+                    <div class="stat-icon green">✓</div>
+                    <div>
+                        <p>Employees Imported</p>
+                        <h2 id="dashboardInserted">--</h2>
+                        <span>Across all uploads</span>
+                    </div>
+                </div>
+
+                <div class="dashboard-stat-card">
+                    <div class="stat-icon orange">⚠</div>
+                    <div>
+                        <p>Rejected Records</p>
+                        <h2 id="dashboardRejected">--</h2>
+                        <span>Require correction</span>
+                    </div>
+                </div>
+
+                <div class="dashboard-stat-card">
+                    <div class="stat-icon purple">⧉</div>
+                    <div>
+                        <p>Duplicate Records</p>
+                        <h2 id="dashboardDuplicates">--</h2>
+                        <span>Skipped during imports</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Analytics -->
+            <div class="dashboard-grid">
+                <div class="dashboard-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h3>Upload Performance</h3>
+                            <p>Overall CSV processing results</p>
+                        </div>
+                    </div>
+
+                    <div class="upload-performance">
+                        <div class="performance-value">
+                            <h2 id="dashboardSuccessRate">--%</h2>
+                            <p>Successful processing rate</p>
+                        </div>
+                        <div class="performance-bar">
+                            <div id="dashboardSuccessBar"></div>
+                        </div>
+                        <div class="performance-legend">
+                            <span>Successful: <b id="dashboardSuccess">0</b></span>
+                            <span>Rejected: <b id="dashboardRejectedLegend">0</b></span>
+                            <span>Duplicates: <b id="dashboardDuplicatesLegend">0</b></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dashboard-panel">
+                    <div class="panel-heading">
+                        <div>
+                            <h3>Upload Summary</h3>
+                            <p>Recent upload activity</p>
+                        </div>
+                        <a href="#history-section" class="view-all-link"
+                           onclick="showPage('history-section')">
+                            View all
+                        </a>
+                    </div>
+
+                    <div id="dashboardRecentUploads">
+                        <p>Loading upload activity...</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Department Summary -->
+            <div class="dashboard-panel department-panel">
+                <div class="panel-heading">
+                    <div>
+                        <h3>Department Overview</h3>
+                        <p>Employee distribution across departments</p>
+                    </div>
+                </div>
+                <div id="dashboardDepartments" class="department-list">
+                    Loading department data...
+                </div>
+            </div>
         </section>
+
 
 
         <!-- CSV Upload Section -->
@@ -309,6 +408,7 @@
 <script src="/js/upload.js" defer></script>
 <script src="/js/employees.js" defer></script>
 <script src="/js/history.js" defer></script>
+<script src="/js/dashboard.js" defer></script>
 <script src="/js/app.js" defer></script>
 
 </body>

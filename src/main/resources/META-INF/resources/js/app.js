@@ -45,6 +45,9 @@ document.addEventListener("DOMContentLoaded", function () {
         if (pageId === "history-section") {
             loadUploadHistory();
         }
+        if (pageId === "dashboard") {
+            loadDashboard();
+        }
 
     }
 
